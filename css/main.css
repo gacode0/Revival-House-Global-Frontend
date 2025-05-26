@@ -2540,6 +2540,18 @@ html.no-csstransitions .hero-content {
   margin-right: 0;
   background-color: #21070a;
   border-color: #21070a;
+  text-align: center;
+  white-space: normal;
+  padding: 1.5rem 2rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  
+  @media screen and (max-width: 600px) {
+    padding: 1.2rem 1.5rem;
+    line-height: 1.4;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+  }
 }
 
 /* ------------------------------------------------------------------- 

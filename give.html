@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <!--- basic page needs -->
+    <meta charset="utf-8">
+    <title>Give - Revival House Global</title>
+    <meta name="description" content="Support the ministry of Revival House Global through your giving">
+    <meta name="author" content="Revival House Global">
+
+    <!-- mobile specific metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/give.css">
+
+    <!-- script -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body id="top">
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="about.html" title="About">About</a></li>
+                <li><a href="events.html" title="Events">Events</a></li>
+                <li class="current"><a href="give.html" title="Give">Give</a></li>
+                <li><a href="contact.html" title="Contact us">Contact</a></li>	
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+    </header>
+
+    <!-- page header -->
+    <section class="page-header page-header--give">
+        <div class="gradient-overlay"></div>
+        <div class="row page-header__content">
+            <div class="column">
+                <h1>Give To The Ministry</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- give content -->
+    <section class="page-content">
+        <div class="row">
+            <div class="column">
+                <p class="lead drop-cap">
+                    Your giving enables the gospel to reach nations and transforms lives. At Revival House Global, we honor your gifts as sacred seed sown into God's kingdom. Whether tithes, offerings, or special donations, your financial partnership helps fulfill our mandate to reveal Jesus to humanity.
+                </p>
+
+                <div class="row block-large-1-2 block-tab-full give-types">
+                    <!-- Tithe -->
+                    <div class="column give-types__item">
+                        <div class="give-types__content">
+                            <h2 class="give-types__title">Tithe</h2>
+                            <p>
+                                "Bring the whole tithe into the storehouse..." (Malachi 3:10). Honor God with the first 10% of your income as an act of worship and obedience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Offering -->
+                    <div class="column give-types__item">
+                        <div class="give-types__content">
+                            <h2 class="give-types__title">Offering</h2>
+                            <p>
+                                "Each of you should give what you have decided in your heart to give..." (2 Cor 9:7). Give beyond the tithe as the Lord leads you.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Partnership -->
+                    <div class="column give-types__item">
+                        <div class="give-types__content">
+                            <h2 class="give-types__title">Partnership</h2>
+                            <p>
+                                Join our monthly partners who help sustain the ministry's global outreach, media production, and missionary work.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Donation -->
+                    <div class="column give-types__item">
+                        <div class="give-types__content">
+                            <h2 class="give-types__title">Donation</h2>
+                            <p>
+                                Support special projects, building funds, or specific initiatives as the Lord directs your heart.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tithe Form -->
+                <div id="tithe-form" class="give-form">
+                    <h2>Tithe Payment</h2>
+                    <form id="tithePaymentForm" class="payment-form">
+                        <div class="form-field">
+                            <label for="tithe-amount">Amount (NGN)</label>
+                            <input type="number" id="tithe-amount" name="amount" min="100" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="tithe-email">Email Address</label>
+                            <input type="email" id="tithe-email" name="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="tithe-gateway">Payment Gateway</label>
+                            <select id="tithe-gateway" name="gateway">
+                                <option value="paystack">Paystack</option>
+                                <option value="flutterwave">Flutterwave</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="payment_type" value="tithe">
+                        <button type="submit" class="btn btn--primary">Proceed to Payment</button>
+                    </form>
+                </div>
+
+                <!-- Offering Form -->
+                <div id="offering-form" class="give-form">
+                    <h2>Offering Payment</h2>
+                    <form id="offeringPaymentForm" class="payment-form">
+                        <div class="form-field">
+                            <label for="offering-amount">Amount (NGN)</label>
+                            <input type="number" id="offering-amount" name="amount" min="100" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="offering-email">Email Address</label>
+                            <input type="email" id="offering-email" name="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="offering-gateway">Payment Gateway</label>
+                            <select id="offering-gateway" name="gateway">
+                                <option value="paystack">Paystack</option>
+                                <option value="flutterwave">Flutterwave</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="payment_type" value="offering">
+                        <button type="submit" class="btn btn--primary">Proceed to Payment</button>
+                    </form>
+                </div>
+
+                <!-- Partnership Form -->
+                <div id="partnership-form" class="give-form">
+                    <h2>Partnership Commitment</h2>
+                    <form id="partnershipPaymentForm" class="payment-form">
+                        <div class="form-field">
+                            <label for="partnership-type">Partnership Type</label>
+                            <select id="partnership-type" name="partnership_type">
+                                <option value="monthly">Monthly Partner</option>
+                                <option value="quarterly">Quarterly Partner</option>
+                                <option value="annual">Annual Partner</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="partnership-amount">Amount (NGN)</label>
+                            <input type="number" id="partnership-amount" name="amount" min="1000" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="partnership-email">Email Address</label>
+                            <input type="email" id="partnership-email" name="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="partnership-gateway">Payment Gateway</label>
+                            <select id="partnership-gateway" name="gateway">
+                                <option value="paystack">Paystack</option>
+                                <option value="flutterwave">Flutterwave</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="payment_type" value="partnership">
+                        <button type="submit" class="btn btn--primary">Become a Partner</button>
+                    </form>
+                </div>
+
+                <!-- Donation Form -->
+                <div id="donation-form" class="give-form">
+                    <h2>General Donation</h2>
+                    <form id="donationPaymentForm" class="payment-form">
+                        <div class="form-field">
+                            <label for="donation-purpose">Purpose (Optional)</label>
+                            <input type="text" id="donation-purpose" name="purpose" placeholder="E.g. Building Fund, Missions, etc.">
+                        </div>
+                        <div class="form-field">
+                            <label for="donation-amount">Amount (NGN)</label>
+                            <input type="number" id="donation-amount" name="amount" min="100" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="donation-email">Email Address</label>
+                            <input type="email" id="donation-email" name="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="donation-gateway">Payment Gateway</label>
+                            <select id="donation-gateway" name="gateway">
+                                <option value="paystack">Paystack</option>
+                                <option value="flutterwave">Flutterwave</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="payment_type" value="donation">
+                        <button type="submit" class="btn btn--primary">Make Donation</button>
+                    </form>
+                </div>
+    </section>
+
+    <!-- Social -->
+    <section class="s-social">
+        <div class="row social-content">
+            <div class="column">
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--facebook"></span>
+                            <span class="social-list__text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--twitter"></span>
+                            <span class="social-list__text">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--instagram"></span>
+                            <span class="social-list__text">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#0" title="">
+                            <span class="social-list__icon social-list__icon--email"></span>
+                            <span class="social-list__text">Email</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="s-footer">
+        <div class="row footer-top">
+            <div class="column large-4 medium-5 tab-full">
+                <div class="footer-logo">
+                    <a class="site-footer-logo" href="index.html">
+                        <img src="images/logo.svg" alt="Homepage">
+                    </a>
+                </div>
+                <p>
+                Revival House Global is a move of God's Spirit called to reveal Jesus to humanity across nations. We are revivalists who walk in favor, rejoicing in the Spirit as we fulfill the Great Commission.
+                </p>
+            </div>
+            <div class="column large-half tab-full">
+                <div class="row">
+                    <div class="column large-7 medium-full">
+                        <h4 class="h6">Our Location</h4>
+                        <p>
+                        Benson Bus Stop, Opposite UBA, <br>
+                        Beside Lugz Pharmacy, Ikorodu, <br>
+                        Lagos Nigeria.
+                        </p>
+                        <p>
+                        <a href="https://www.google.com/maps/search/Benson+Bus+Stop,+Opposite+UBA,+%3Cbr%3E+Beside+Lugz+Pharmacy,+Ikorodu,+%3Cbr%3E+Lagos+Nigeria./@6.5869478,3.2798929,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank" class="btn btn--footer">Get Direction</a>
+                        </p>
+                    </div>
+                    <div class="column large-5 medium-full">
+                        <h4 class="h6">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="give.html">Give</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="give.html">Give</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-bottom">
+            <div class="column ss-copyright">
+                <span>© Copyright Revival House Global 2025</span> 
+            </div>
+        </div>
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Java Script -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/give.js"></script>
+</body>
+</html>

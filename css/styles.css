@@ -1,0 +1,13 @@
+/* Mobile-first */
+body {
+  font-size: 16px;
+  background: white;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    background: lightgray;
+  }
+}

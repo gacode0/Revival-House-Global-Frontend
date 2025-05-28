@@ -1,0 +1,185 @@
+/* ==========================================================================
+   Apostle Mike Ajie Page Styles
+   ========================================================================== */
+
+/* Page Header
+   ========================================================================== */
+.page-header--apostle {
+    background: url('../images/apostle-header-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* ==========================================================================
+   Apostle Page - Simplified
+   ========================================================================== */
+
+/* Hero Section */
+.apostle-hero {
+    margin: 4rem 0 6rem;
+    text-align: center;
+}
+
+.apostle-main-image {
+    width: 100%;
+    max-width: 600px; /* Optimal size for profile images */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 2px solid var(--color-gold); /* Gold border for prominence */
+}
+
+/* Fallback styling if image fails */
+img[alt="Image failed to load"] {
+    background: #f1f1f1;
+    padding: 2rem;
+    text-align: center;
+    color: #666;
+}
+
+.apostle-hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ministry-highlights {
+    columns: 3;
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.ministry-highlights li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.ministry-highlights li:before {
+    content: "•";
+    color: var(--color-gold);
+    position: absolute;
+    left: 0;
+}
+
+/* Core Message */
+.apostle-message {
+    margin: 6rem 0;
+    text-align: center;
+}
+
+.apostle-message p {
+    max-width: 700px;
+    margin: 2rem auto;
+}
+
+/* Ministry Focus */
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.focus-item {
+    background: var(--color-gray-15);
+    padding: 2rem;
+    border-radius: 4px;
+    text-align: center;
+    border-bottom: 3px solid var(--color-gold);
+}
+
+.focus-item h4 {
+    color: var(--color-gold);
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .ministry-highlights {
+        columns: 1;
+    }
+    
+    .apostle-main-image {
+        max-width: 100%;
+    }
+    
+    .focus-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .apostle-hero {
+        margin: 3rem 0;
+    }
+    
+    .apostle-message {
+        margin: 4rem 0;
+    }
+}
+
+/* Milestones
+   ========================================================================== */
+.apostle-milestones {
+    margin: 6rem 0;
+}
+
+.milestone-item {
+    background: var(--color-gray-15);
+    padding: 2rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.milestone-item:hover {
+    transform: translateY(-5px);
+}
+
+.milestone-item h4 {
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+}
+
+/* Mission Blockquote
+   ========================================================================== */
+.apostle-mission blockquote {
+    border-left: 3px solid var(--color-gold);
+    padding-left: 2rem;
+    margin: 4rem 0;
+}
+
+/* CTA Section
+   ========================================================================== */
+.s-cta {
+    background: var(--color-white-15);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+/* Responsive
+   ========================================================================== */
+@media screen and (max-width: 900px) {
+    .apostle-profile {
+        flex-direction: column;
+    }
+    
+    .apostle-image, 
+    .apostle-bio {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .page-header--apostle .page-header__content {
+        padding-top: 8rem;
+    }
+    
+    .apostle-milestones {
+        margin: 4rem 0;
+    }
+}

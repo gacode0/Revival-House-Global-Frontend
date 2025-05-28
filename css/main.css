@@ -1834,7 +1834,7 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 160px;   /* previously 108px */
+  width: 180px;   /* previously 108px */
   height: auto;
 }
 
@@ -2057,6 +2057,133 @@ input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .s-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.s-hero::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #050505;
+  opacity: .5;
+}
+
+.no-js .s-hero {
+  background: #000000;
+}
+
+/* -------------------------------------------------------------------
+ * ## hero left bar
+ * ------------------------------------------------------------------- */
+.hero-left-bar {
+  height: 100%;
+  width: 8rem;
+  background-color: #000000;
+  opacity: .9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* -------------------------------------------------------------------
+ * ## hero content
+ * ------------------------------------------------------------------- */
+.s-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100%;
+    padding-top: 15vh;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content__text {
+    padding-bottom: 8rem; /* Increased to create space for buttons */
+    position: relative;
+}
+
+.hero-content h1 {
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 3rem; /* Added space below heading */
+    position: relative;
+}
+
+.hero-content h1::before {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 10rem;
+    background-color: #7d1c24;
+    position: absolute;
+    top: 0;
+    left: .8rem;
+}
+
+/* ===================================================================
+ * # hero
+ *
+ * ------------------------------------------------------------------- */
+.s-hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 82rem;
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+}
+
+.s-hero::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #050505;
+  opacity: .5;
+}
+
+.no-js .s-hero {
+  background: #000000;
+}
+
+/* -------------------------------------------------------------------
+ * ## hero left bar
+ * ------------------------------------------------------------------- */
+.hero-left-bar {
+  height: 100%;
+  width: 8rem;
+  background-color: #000000;
+  opacity: .9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* ===================================================================
+ * # hero
+ *
+ * ------------------------------------------------------------------- */
+.s-hero {
   width: 100%;
   height: 100vh;
   min-height: 82rem;
@@ -2101,8 +2228,8 @@ input::-moz-focus-inner {
 .hero-content {
   height: 100%;
   max-width: 1400px;
-  padding-top: 20vh;
-  padding-bottom: 18vh;
+  padding-top: 70vh;
+  padding-bottom: 20vh;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -2158,6 +2285,7 @@ input::-moz-focus-inner {
   background-color: #ffffff !important;
   color: #000000;
 }
+
 
 /* ------------------------------------------------------------------- 
  * ## hero social

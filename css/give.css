@@ -1,117 +1,27 @@
-/* Give Page Styles */
-.page-header--give {
-    background-image: url('../images/give-bg.jpg');
-}
-
-.give-types {
-    margin: 4.8rem 0;
-}
-
-.give-types__item {
-    margin-bottom: 3rem;
-}
-
-.give-types__content {
-    background: #f9f9f9;
-    padding: 3rem;
-    height: 100%;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.give-types__content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.give-types__title {
-    color: #2a2a2a;
-    margin-top: 0;
-}
-
-.give-btn {
-    margin-top: 1.5rem;
-}
-
+/* Make forms visible by default */
 .give-form {
-    background: #f9f9f9;
-    padding: 4rem;
-    margin: 6rem 0;
-    border-radius: 4px;
-    display: none;
-}
-
-.give-form.active {
     display: block;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 5px;
 }
 
+/* Style form elements */
 .payment-form .form-field {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .payment-form label {
     display: block;
-    font-size: 1.5rem;
-    margin-bottom: 0.8rem;
-    color: #2a2a2a;
-    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 .payment-form input,
 .payment-form select {
     width: 100%;
-    padding: 1.2rem 1.5rem;
-    border: 1px solid #e0e0e0;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 1.6rem;
-}
-
-.give-testimonials {
-    margin: 8rem 0 4rem;
-}
-
-.testimonials-list__item {
-    margin-bottom: 3rem;
-}
-
-.testimonials-list__quote {
-    background: #f9f9f9;
-    padding: 3rem;
-    position: relative;
-    margin-bottom: 2rem;
-    font-style: italic;
-    border-radius: 4px;
-}
-
-.testimonials-list__quote:before {
-    content: '"';
-    font-size: 6rem;
-    color: rgba(0,0,0,0.1);
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    line-height: 1;
-}
-
-.testimonials-list__author {
-    display: flex;
-    align-items: center;
-}
-
-.testimonials-list__avatar {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    margin-right: 1.5rem;
-    object-fit: cover;
-}
-
-.testimonials-list__cite strong {
-    display: block;
-    color: #2a2a2a;
-}
-
-.testimonials-list__cite span {
-    font-size: 1.4rem;
-    color: #888;
 }

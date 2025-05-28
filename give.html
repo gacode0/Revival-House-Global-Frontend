@@ -83,6 +83,7 @@
                             <p>
                                 "Bring the whole tithe into the storehouse..." (Malachi 3:10). Honor God with the first 10% of your income as an act of worship and obedience.
                             </p>
+                            <a href="#tithe-form" class="btn btn--primary give-btn">Give Tithe</a>
                         </div>
                     </div>
 
@@ -93,6 +94,7 @@
                             <p>
                                 "Each of you should give what you have decided in your heart to give..." (2 Cor 9:7). Give beyond the tithe as the Lord leads you.
                             </p>
+                            <a href="#offering-form" class="btn btn--primary give-btn">Give Offering</a>
                         </div>
                     </div>
 
@@ -103,6 +105,7 @@
                             <p>
                                 Join our monthly partners who help sustain the ministry's global outreach, media production, and missionary work.
                             </p>
+                            <a href="#partnership-form" class="btn btn--primary give-btn">Become a Partner</a>
                         </div>
                     </div>
 
@@ -113,6 +116,7 @@
                             <p>
                                 Support special projects, building funds, or specific initiatives as the Lord directs your heart.
                             </p>
+                            <a href="#donation-form" class="btn btn--primary give-btn">Make Donation</a>
                         </div>
                     </div>
                 </div>
@@ -224,6 +228,8 @@
                         <button type="submit" class="btn btn--primary">Make Donation</button>
                     </form>
                 </div>
+            </div>
+        </div>
     </section>
 
     <!-- Social -->
@@ -272,114 +278,6 @@
                 <p>
                 Revival House Global is a move of God's Spirit called to reveal Jesus to humanity across nations. We are revivalists who walk in favor, rejoicing in the Spirit as we fulfill the Great Commission.
                 </p>
-
-                 <!-- Tithe Form -->
-                <div id="tithe-form" class="give-form">
-                    <h2>Tithe Payment</h2>
-                    <form id="tithePaymentForm" class="payment-form">
-                        <div class="form-field">
-                            <label for="tithe-amount">Amount (NGN)</label>
-                            <input type="number" id="tithe-amount" name="amount" min="100" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="tithe-email">Email Address</label>
-                            <input type="email" id="tithe-email" name="email" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="tithe-gateway">Payment Gateway</label>
-                            <select id="tithe-gateway" name="gateway">
-                                <option value="paystack">Paystack</option>
-                                <option value="flutterwave">Flutterwave</option>
-                            </select>
-                        </div>
-                        <input type="hidden" name="payment_type" value="tithe">
-                        <button type="submit" class="btn btn--primary">Proceed to Payment</button>
-                    </form>
-                </div>
-
-                <!-- Offering Form -->
-                <div id="offering-form" class="give-form">
-                    <h2>Offering Payment</h2>
-                    <form id="offeringPaymentForm" class="payment-form">
-                        <div class="form-field">
-                            <label for="offering-amount">Amount (NGN)</label>
-                            <input type="number" id="offering-amount" name="amount" min="100" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="offering-email">Email Address</label>
-                            <input type="email" id="offering-email" name="email" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="offering-gateway">Payment Gateway</label>
-                            <select id="offering-gateway" name="gateway">
-                                <option value="paystack">Paystack</option>
-                                <option value="flutterwave">Flutterwave</option>
-                            </select>
-                        </div>
-                        <input type="hidden" name="payment_type" value="offering">
-                        <button type="submit" class="btn btn--primary">Proceed to Payment</button>
-                    </form>
-                </div>
-
-                <!-- Partnership Form -->
-                <div id="partnership-form" class="give-form">
-                    <h2>Partnership Commitment</h2>
-                    <form id="partnershipPaymentForm" class="payment-form">
-                        <div class="form-field">
-                            <label for="partnership-type">Partnership Type</label>
-                            <select id="partnership-type" name="partnership_type">
-                                <option value="monthly">Monthly Partner</option>
-                                <option value="quarterly">Quarterly Partner</option>
-                                <option value="annual">Annual Partner</option>
-                            </select>
-                        </div>
-                        <div class="form-field">
-                            <label for="partnership-amount">Amount (NGN)</label>
-                            <input type="number" id="partnership-amount" name="amount" min="1000" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="partnership-email">Email Address</label>
-                            <input type="email" id="partnership-email" name="email" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="partnership-gateway">Payment Gateway</label>
-                            <select id="partnership-gateway" name="gateway">
-                                <option value="paystack">Paystack</option>
-                                <option value="flutterwave">Flutterwave</option>
-                            </select>
-                        </div>
-                        <input type="hidden" name="payment_type" value="partnership">
-                        <button type="submit" class="btn btn--primary">Become a Partner</button>
-                    </form>
-                </div>
-
-                <!-- Donation Form -->
-                <div id="donation-form" class="give-form">
-                    <h2>General Donation</h2>
-                    <form id="donationPaymentForm" class="payment-form">
-                        <div class="form-field">
-                            <label for="donation-purpose">Purpose (Optional)</label>
-                            <input type="text" id="donation-purpose" name="purpose" placeholder="E.g. Building Fund, Missions, etc.">
-                        </div>
-                        <div class="form-field">
-                            <label for="donation-amount">Amount (NGN)</label>
-                            <input type="number" id="donation-amount" name="amount" min="100" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="donation-email">Email Address</label>
-                            <input type="email" id="donation-email" name="email" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="donation-gateway">Payment Gateway</label>
-                            <select id="donation-gateway" name="gateway">
-                                <option value="paystack">Paystack</option>
-                                <option value="flutterwave">Flutterwave</option>
-                            </select>
-                        </div>
-                        <input type="hidden" name="payment_type" value="donation">
-                        <button type="submit" class="btn btn--primary">Make Donation</button>
-                    </form>
-                </div>
             </div>
             <div class="column large-half tab-full">
                 <div class="row">
@@ -399,7 +297,6 @@
                         <ul class="footer-list">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="give.html">Give</a></li>
                             <li><a href="events.html">Events</a></li>
                             <li><a href="give.html">Give</a></li>
                             <li><a href="contact.html">Contact</a></li>

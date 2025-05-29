@@ -2214,57 +2214,106 @@ input::-moz-focus-inner {
 .no-js .s-hero {
   background: #000000;
 }
-
-/* Mobile Hero Section Fixes */
+/* Mobile Hero Section Fixes - Adjusted for better positioning */
 @media (max-width: 768px) {
   .hero-content {
-    padding-top: 15vh !important;  /* Reduced from 100vh */
-    padding-bottom: 5vh !important;
+    padding-top: 30vh !important;  /* Reduced to move content down */
+    padding-bottom: 20vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .hero-content h1 {
-    font-size: 2.5rem !important;  /* Reduced from 4.8rem */
+    font-size: 4.5rem !important; /* Reduced font size */
     line-height: 1.2 !important;
-    margin: 0 auto 1rem !important;
+    margin: 0 auto 1.5rem !important;
     padding-top: 0 !important;
     word-break: keep-all;
     text-align: center;
+    order: 1;
   }
 
   .btn-group {
-    margin-top: 1.5rem !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    margin: 1rem auto 3rem !important; /* Added bottom margin for scroll space */
+    padding: 0 !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    order: 2;
+    width: 100%;
   }
 
   .btn-group .btn {
     width: 100% !important;
-    max-width: 280px !important;
+    max-width: 260px !important; /* Slightly reduced max-width */
     margin: 0 auto !important;
-  }
-
-  .hero-scroll {
-    margin-top: 3rem !important;
-    padding: 0 !important;
+    padding: 1.2rem 2rem !important;
   }
 
   .hero-left-bar {
-    height: 60vh !important;  /* Adjusted to match new content position */
+    height: 75vh !important;  /* Adjusted to match new content position */
+  }
+
+  .hero-scroll {
+    margin-top: 0 !important; /* Removed extra margin */
+    position: relative;
+    bottom: 2rem;
+    order: 3;
+  }
+}
+
+/* Smaller devices adjustment */
+@media (max-width: 480px) {
+  .hero-content {
+    padding-top: 25vh !important;
+    padding-bottom: 15vh !important;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .btn-group {
+    margin-bottom: 2rem !important;
+  }
+
+  .btn-group .btn {
+    max-width: 220px !important;
+  }
+}
+  .hero-scroll {
+    margin-top: 60rem !important; /* Reduced space above scroll */
+    padding: 0 !important;
+    order: 3; /* Scroll comes last */
+    position: relative;
+    bottom: auto;
+  }
+
+  .hero-left-bar {
+    height: 85vh !important;  /* Extended to accommodate lower content */
   }
 }
 
 /* Smaller Mobile Devices */
 @media (max-width: 480px) {
+  .hero-content {
+    padding-top: 50vh !important; /* Slightly higher for small screens */
+  }
+  
   .hero-content h1 {
     font-size: 2rem !important;
   }
   
   .btn-group .btn {
     max-width: 240px !important;
+  }
+  
+  .hero-scroll {
+    margin-top: 1.5rem !important;
   }
 }
 /* Mobile Optimizations */
@@ -2304,7 +2353,7 @@ input::-moz-focus-inner {
   }
   @media (max-width: 768px) {
     .hero-content {
-        padding-top: 25vh !important;  /* Reduced from likely 40-50vh */
+        padding-top: 60vh !important;  /* Reduced from likely 40-50vh */
     }
     
     .hero-left-bar {

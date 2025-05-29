@@ -2296,7 +2296,7 @@ input::-moz-focus-inner {
   .hero-left-bar {
     height: 85vh !important;  /* Extended to accommodate lower content */
   }
-}
+
 
 /* Smaller Mobile Devices */
 @media (max-width: 480px) {

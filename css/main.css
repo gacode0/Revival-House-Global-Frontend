@@ -2217,44 +2217,54 @@ input::-moz-focus-inner {
 
 /* Mobile Hero Section Fixes */
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 4.8rem !important;
-    line-height: 1.2 !important;
-    margin-right: 0 !important;
-    padding-top: 1.5rem !important;
-    word-break: keep-all;
-    margin-bottom: 1rem;
+  .hero-content {
+    padding-top: 15vh !important;  /* Reduced from 100vh */
+    padding-bottom: 5vh !important;
   }
 
-  .hero-content__buttons {
-    position: relative !important;
-    right: auto !important;
-    bottom: auto !important;
-    width: 100% !important;
-    margin-top: 2rem !important;
-    padding-top: 30vh !important;
-    padding-bottom: 10vh !important;
+  .hero-content h1 {
+    font-size: 2.5rem !important;  /* Reduced from 4.8rem */
+    line-height: 1.2 !important;
+    margin: 0 auto 1rem !important;
+    padding-top: 0 !important;
+    word-break: keep-all;
+    text-align: center;
   }
-  .hero-scroll
-  {
-    padding-top: auto !important;
-    padding-bottom: auto !important;
+
+  .btn-group {
+    margin-top: 1.5rem !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn-group .btn {
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-scroll {
+    margin-top: 3rem !important;
+    padding: 0 !important;
+  }
+
+  .hero-left-bar {
+    height: 60vh !important;  /* Adjusted to match new content position */
+  }
+}
+
+/* Smaller Mobile Devices */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem !important;
   }
   
-  .hero-btn-group{
-  background-color: #050505;
-  }
-  .hero-content__buttons .btn {
-    width: 150% !important;
-    max-width: 280px !important;
-    margin: 0 auto 1rem !important;
-    display: block !important;
-    
-  }
-
-  .hero-content {
-    padding-top: 100vh !important;
-    padding-bottom: 10vh !important;
+  .btn-group .btn {
+    max-width: 240px !important;
   }
 }
 /* Mobile Optimizations */

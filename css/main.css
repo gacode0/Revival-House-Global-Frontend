@@ -2223,6 +2223,7 @@ input::-moz-focus-inner {
     margin-right: 0 !important;
     padding-top: 1.5rem !important;
     word-break: keep-all;
+    margin-bottom: 1rem;
   }
 
   .hero-content__buttons {
@@ -2231,7 +2232,7 @@ input::-moz-focus-inner {
     bottom: auto !important;
     width: 100% !important;
     margin-top: 2rem !important;
-    padding-top: 110vh !important;
+    padding-top: 30vh !important;
     padding-bottom: 10vh !important;
   }
   .hero-scroll
@@ -2276,7 +2277,13 @@ input::-moz-focus-inner {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
   }
-  
+  .btn-group {
+        margin-top: 1.5rem;
+    }
+    
+    .hero-left-bar {
+        height: 80vh !important; /* Adjust bar height to match content */
+    }
   /* Button reorganization */
   .hero-buttons {
     display: flex;
@@ -2285,7 +2292,19 @@ input::-moz-focus-inner {
     gap: 1.5rem;
     margin-top: 2rem;
   }
-  
+  @media (max-width: 768px) {
+    .hero-content {
+        padding-top: 25vh !important;  /* Reduced from likely 40-50vh */
+    }
+    
+    .hero-left-bar {
+        height: 70vh !important;
+    }
+    
+    .hero-content__text {
+        transform: translateY(-20%); /* Pulls content up */
+    }
+}
   .btn-scroll-more {
     order: 1;
     margin-bottom: 1rem;
